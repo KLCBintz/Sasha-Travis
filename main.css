@@ -51,3 +51,29 @@ h1 {
         font-size: 2em;
     }
 }
+
+#music-videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.video {
+    margin-left: 10vw;
+    margin-right: 5vw;
+    padding-top: 5vw;
+}
+
+@media screen and (max-width: 768px) {
+    #music-videos {
+        display: block;
+    }
+}
+
+h2 {
+    font-family: 'mystery quest', 'cursive';
+    align-items: center;
+    padding-top: 5vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
