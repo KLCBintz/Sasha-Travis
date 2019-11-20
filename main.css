@@ -15,20 +15,39 @@ body {
 h1 {
     font-family: 'mystery quest', 'cursive';
     font-size: 3em;
-    padding-top: 5vw;
+    padding-top: 10vw;
     margin-left: 10vw;
     padding-right: 30vw;
 }
 
 #hero { 
     width: 100vw;
-    height: 1000px;
+    height: 100vh;
+    overflow: hidden;
     background-image: url('./img/sasha-cover.jpg');
     background-size: cover;
 }
 
 @media screen and (max-width: 768px) {
     #hero {
-      width: 100vw;
-      height: 100vw;
+    background-image: url('./img/sasha-cover-mobile.jpeg');
+    width: 768px;
+    height: 700px;
     }
+    h1 {
+        padding-top: 20vw;
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #hero {
+    background-image: url('./img/sasha-cover-mobile.jpeg');
+    width: 375px;
+    height: 300px;
+    }
+    h1 {
+        padding-top: 20vw;
+        font-size: 2em;
+    }
+}
