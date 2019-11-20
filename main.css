@@ -59,9 +59,9 @@ h1 {
 }
 
 .video {
-    margin-left: 10vw;
+    margin-left: 5vw;
     margin-right: 5vw;
-    padding-top: 5vw;
+    padding-top: 5vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,7 +73,26 @@ h1 {
 h2 {
     font-family: 'mystery quest', 'cursive';
     align-items: center;
-    padding-top: 5vw;
+    padding-top: 5vh;
     padding-left: 20vw;
     padding-right: 20vw;
+}
+
+#Ravenos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+    #Ravenos {
+        display: block;
+    }
+}
+
+.vampire {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 5vh;
+    width: 30vw;
+    height: auto;
 }
