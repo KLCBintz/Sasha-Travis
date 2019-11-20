@@ -16,6 +16,19 @@ h1 {
     font-family: 'mystery quest', 'cursive';
     font-size: 3em;
     padding-top: 5vw;
-    padding-left: 30vw;
+    margin-left: 10vw;
     padding-right: 30vw;
 }
+
+#hero { 
+    width: 100vw;
+    height: 1000px;
+    background-image: url('./img/sasha-cover.jpg');
+    background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+    #hero {
+      width: 100vw;
+      height: 100vw;
+    }
