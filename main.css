@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+    color: pink;
+    font-family: 'Alice', 'serif';
+}
+
+h1 {
+    font-family: 'mystery quest', 'cursive';
+    font-size: 3em;
+    padding-top: 5vw;
+    padding-left: 30vw;
+    padding-right: 30vw;
+}
