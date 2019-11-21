@@ -80,7 +80,7 @@ h2 {
 
 #Ravenos {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (max-width: 768px) {
@@ -93,6 +93,6 @@ h2 {
     padding-left: 2vw;
     padding-right: 2vw;
     padding-top: 5vh;
-    width: 30vw;
+    width: 40vw;
     height: auto;
 }
