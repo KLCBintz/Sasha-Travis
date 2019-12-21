@@ -73,13 +73,10 @@ h1 {
   color: black;
 }
 
-.card {
-  width: 30vw;
-}
 
-h3 {
+h4 {
   padding-top: 3vh;
-  padding-left: 5vw;
+  padding-left: 25vw;
   padding-right: 5vw;
 }
 
@@ -90,21 +87,11 @@ h2 {
   padding-right: 20vw;
 }
 
-#Ravenos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-@media screen and (max-width: 768px) {
-  #Ravenos {
-    display: block;
-  }
-}
 
 .vampire {
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 5vh;
-  width: 40vw;
+  width: 100%;
   height: auto;
 }
