@@ -1,115 +1,121 @@
 body {
-    background-color: black;
-    color: white;
-    font-family: 'Alice', 'serif';
+  background-color: black;
+  color: white;
+  font-family: "Alice", "serif";
 }
 
 .nav-wrapper {
-    background-color: black;
+  background-color: black;
 }
 
 #nav-mobile {
-    padding-right: 5vw;
+  padding-right: 5vw;
 }
 
 h1 {
-    font-size: 3em;
-    padding-top: 10vw;
-    margin-left: 10vw;
-    padding-right: 30vw;
+  font-size: 3em;
+  padding-top: 10vw;
+  margin-left: 10vw;
+  padding-right: 30vw;
 }
 
-#hero { 
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-image: url('./img/sasha-cover.jpg');
-    background-size: cover;
+#hero {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("./img/sasha-cover.jpg");
+  background-size: cover;
 }
 
 @media screen and (max-width: 768px) {
-    #hero {
-    background-image: url('./img/sasha-cover-mobile.jpeg');
+  #hero {
+    background-image: url("./img/sasha-cover-mobile.jpeg");
     width: 768px;
     height: 700px;
-    }
-    h1 {
-        padding-top: 20vw;
-        font-size: 2.5em;
-    }
+  }
+  h1 {
+    padding-top: 20vw;
+    font-size: 2.5em;
+  }
 }
 
 @media screen and (max-width: 375px) {
-    #hero {
-    background-image: url('./img/sasha-cover-mobile.jpeg');
+  #hero {
+    background-image: url("./img/sasha-cover-mobile.jpeg");
     width: 375px;
     height: 300px;
-    }
-    h1 {
-        padding-top: 20vw;
-        font-size: 2em;
-    }
+  }
+  h1 {
+    padding-top: 20vw;
+    font-size: 2em;
+  }
 }
 
 #music-videos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .video {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding-top: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding-top: 5vh;
 }
 
 @media screen and (max-width: 768px) {
-    #music-videos {
-        display: block;
-    }
+  #music-videos {
+    display: block;
+  }
 }
 
 #blog {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 2vw;
-    color: black;
-    margin-left: 2vw;
-    margin-right: 2vw;
-}
-
-.card {
-    width: 30vw;
-}
-
-h3 {
-    padding-top: 3vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
-h2 {
-    align-items: center;
-    padding-top: 5vh;
-    padding-left: 20vw;
-    padding-right: 20vw;
-}
-
-#Ravenos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2vw;
+  color: black;
+  margin-left: 2vw;
+  margin-right: 2vw;
 }
 
 @media screen and (max-width: 768px) {
-    #Ravenos {
-        display: block;
-    }
+  #blog {
+    display: block;
+  }
+}
+
+.card {
+  width: 30vw;
+}
+
+h3 {
+  padding-top: 3vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+h2 {
+  align-items: center;
+  padding-top: 5vh;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+#Ravenos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 768px) {
+  #Ravenos {
+    display: block;
+  }
 }
 
 .vampire {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 5vh;
-    width: 40vw;
-    height: auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 5vh;
+  width: 40vw;
+  height: auto;
 }
