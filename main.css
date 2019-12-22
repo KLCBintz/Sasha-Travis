@@ -52,24 +52,6 @@ h1 {
   }
 }
 
-#music-videos {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-}
-
-.video {
-  margin-left: 5vw;
-  margin-right: 5vw;
-  padding-top: 5vh;
-}
-
-@media screen and (max-width: 768px) {
-  #music-videos {
-    display: block;
-  }
-}
-
 #blog {
   color: black;
 }
