@@ -82,6 +82,14 @@ h2 {
   color: #fff;
   background-color: #1b1b1b;
 }
-.card-content > p {
+.card-content > p, form {
   font-family: "Roboto", "sans-serif";
+}
+
+.hidden {
+  display: none;
+}
+
+#contactContainer {
+  margin-top: 10em;
 }

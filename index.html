@@ -2,7 +2,7 @@
 <html>
     <head>   
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-        <meta name="theme-color" content="#1b1b1b" />
+        <meta name="theme-color" content="#AC2E2F" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -126,7 +126,40 @@
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div>
+<div id="contactContainer" class="container">
+    <div class="row">
+        <h3>Contact Me</h3>
+        <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" class="col s12">
+            <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate" required />
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate" required />
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate" required />
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea id="message" class="materialize-textarea" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
 
+        </form>
+    </div>
+</div>
 </body>
 
 </html>
