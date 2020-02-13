@@ -1,29 +1,29 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Sasha Travis`,
+    description: `Actress, Voiceover Artist, Writer`,
+    author: `@sashamtravis`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-react-helmet`,//Put in metatags in html in header
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: `gatsby-source-filesystem`,//get files from local files to Gatsby's graphql schema
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sharp`,//Lazy Loading for Images
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: `gatsby-plugin-manifest`,//Configuration for PWA
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Sasha Travis`,
+        short_name: `Sasha`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
+        background_color: `#000`,
+        theme_color: `#000`,
+        display: `standalone`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
