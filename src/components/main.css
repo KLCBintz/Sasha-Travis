@@ -17,10 +17,16 @@ h1, h2, h3, h4, h5, footer {
 }
 
 h1 {
-    font-size: 3em;
-    padding-top: 10vw;
+    top: 1em;
     margin-left: 10vw;
-    padding-right: 30vw;
+    text-transform: uppercase;
+    color: #28B4D7;
+    font-size: 5em;
+    font-weight: 800;
+}
+#animated {
+    top: 20%;
+    margin-left: 10vw;
 }
 
 #hero {
@@ -37,33 +43,30 @@ h1 {
 .hero__text {
     position: absolute;
 }
-
-@media screen and (max-width: 768px) {
-    #hero {
-        height: 60vh;
-    }
-    h1 {
-        padding-top: 20vw;
-        font-size: 2.5em;
-    }
+.hero__animated-text {
+    position: absolute
 }
 
-@media screen and (max-width: 375px) {
-    #hero {
-        width: 100vw;
-        height: 50vh;
-    }
-    h1 {
-        padding-top: 20vw;
-        font-size: 2em;
-    }
+.transitions-item {
+    overflow: hidden;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    will-change: transform, opacity, height;
+    white-space: nowrap;
+    cursor: pointer;
+    line-height: 1.2em;
 }
+
 
 #blog {
     color: black;
 }
-
-
 
 
 
@@ -83,10 +86,49 @@ h1 {
     font-family: "Roboto", "sans-serif";
 }
 
+.shadow {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+
+}
+.shadow:hover {
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.003)
+}
+
 .hidden {
     display: none;
 }
 
 #contactContainer {
     margin-top: 10em;
+}
+
+.hero__text-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    #hero {
+        height: 60vh;
+    }
+    h1, .transitions-item {
+        font-size: 2.5em;
+    }
+    #animated {
+        display: none;
+    }
+    .hero__text-mobile {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #hero {
+        width: 100vw;
+        height: 50vh;
+    }
+    h1, .transitions-item {
+        font-size: 2em;
+    }
 }
