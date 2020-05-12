@@ -1,0 +1,66 @@
+body {
+  background-color: #141414;
+  color: white;
+  font-family: "Alice", "serif";
+}
+
+.nav-wrapper {
+  background-color: black;
+}
+
+#nav-mobile {
+  padding-right: 5vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+footer {
+  text-align: center;
+}
+
+h1 {
+  top: 1em;
+  text-transform: uppercase;
+  font-size: 5em;
+  font-weight: 800;
+}
+
+#hero {
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+}
+#hero > section {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: absolute;
+}
+.hero {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#videos {
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(0, -50%);
+}
+
+.vampire {
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 5vh;
+  width: 100%;
+  height: auto;
+}
+
+#contactContainer {
+  margin-top: 10em;
+}

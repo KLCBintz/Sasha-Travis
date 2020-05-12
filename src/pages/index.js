@@ -1,11 +1,13 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 
 import SEO from "../components/seo"
-import HeroAnimatedText from "../components/hero-animated-text"
+
+import Instagram from "../components/instagram"
+import Carousel from "nuka-carousel"
 
 const IndexPage = ({ data }) => {
   console.log(data)
@@ -14,94 +16,109 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <div id="hero">
-        <h1 className="hero__text">
-          I am <span className="hero__text-mobile">Sasha Travis</span>
-        </h1>
-        <div id="animated" className="hero__text">
-          <HeroAnimatedText />
-        </div>
-
         <Img
           fluid={data.hero.childImageSharp.fluid}
-          alt="sasha posing on a couch like rose from titanic"
+          alt="sasha singing into a mic"
           className="hero"
         />
+        <section className="hero-text">
+          <h1>Sasha Travis</h1>
+          <h2>Badass Bitch</h2>
+        </section>
       </div>
 
-      <h2>Sasha's Tour Notes</h2>
-      <h4>Unity of Opposites Tour</h4>
+      <div>
+        <h2>
+          <a id="music"></a>Music Videos
+        </h2>
 
-      <div id="blog" className="container">
-        <div className="row">
-          <div className="col m12 l4">
-            <div className="card z-depth-3">
-              <div className="card-image">
-                <Img fluid={data.blog1.childImageSharp.fluid} alt="selfies" />
-                <span className="card-title">Day 1</span>
-              </div>
-              <div className="card-content">
-                <p>
-                  Everything takes Pi times as long as I think it will, always,
-                  nothing in my life takes less time. I need to get better at
-                  this. Time is just so liquid.
-                </p>
-                <p>Snaps take longer. Tatoo removal...</p>
-              </div>
-              <div className="card-action">
-                <a href="https://www.ilikealice.com/tour-notes-day-1-unity-of-opposites-tour/">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col m12 l4">
-            <div className="card z-depth-3">
-              <div className="card-image">
-                <Img
-                  fluid={data.blog2.childImageSharp.fluid}
-                  alt="spooky house"
-                />
-                <span className="card-title">Day 2</span>
-              </div>
-              <div className="card-content">
-                <p>
-                  Duck time!! Lookin all swanky and feathery smooth on the top
-                  and paddlin like crazy underneath! Find your moments for rest
-                  and protect them, you need them, your team...
-                </p>
-              </div>
-              <div className="card-action">
-                <a href="https://www.ilikealice.com/tour-notes-day-2-unity-of-opposites-tour/">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="col m12 l4">
-            <div className="card z-depth-3">
-              <div className="card-image">
-                <Img
-                  fluid={data.blog3.childImageSharp.fluid}
-                  alt="band setup"
-                />
-                <span className="card-title">Day 3</span>
-              </div>
-              <div className="card-content">
-                <p>
-                  Self care and being able to care for other people/creatures go
-                  hand in hand. When yer outfit has little feathers in it yer
-                  prolly gonna leave little feathers everywhere...
-                </p>
-              </div>
-              <div className="card-action">
-                <a href="https://www.ilikealice.com/tour-notes-day-3-unity-of-opposites-tour/">
-                  Read More
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Carousel className="videos">
+          <a href="https://www.youtube.com/watch?v=UEBKhz5j6Lw">
+            <Img fluid={data.a1.childImageSharp.fluid} alt="band playing" />
+          </a>
+          <a href="https://www.youtube.com/watch?v=RGbDjdoWVoI">
+            <Img
+              fluid={data.a2.childImageSharp.fluid}
+              alt="dancer reaching up"
+            />
+          </a>
+          <a href="https://www.youtube.com/watch?v=3tZfHOUfiB8">
+            <Img fluid={data.a3.childImageSharp.fluid} alt="old clock" />
+          </a>
+          <a href="https://www.youtube.com/watch?v=2ow3jZXGmPU">
+            <Img
+              fluid={data.a4.childImageSharp.fluid}
+              alt="Gordan Lyle Bash playing bass"
+            />
+          </a>
+          <a href="https://www.youtube.com/watch?v=nfzE9Ufc0CA">
+            <Img
+              fluid={data.a5.childImageSharp.fluid}
+              alt="Tosh Cox being caressed"
+            />
+          </a>
+          <a href="https://www.youtube.com/watch?v=gHYf-4qWDK0">
+            <Img
+              fluid={data.a6.childImageSharp.fluid}
+              alt="woman crouching on ground in forest"
+            />
+          </a>
+          <a href="https://www.youtube.com/watch?v=7Ap5Rx80fac">
+            <Img
+              fluid={data.a7.childImageSharp.fluid}
+              alt="life size puppets lying in a pile"
+            />
+          </a>
+          <a href="https://www.youtube.com/watch?v=qzJHbHhCvAM">
+            <Img
+              fluid={data.a8.childImageSharp.fluid}
+              alt="Tash Cox in front of beach"
+            />
+          </a>
+          <a href="https://www.youtube.com/watch?v=LUPwz6s5JH8">
+            <Img
+              fluid={data.a9.childImageSharp.fluid}
+              alt="Sasha Travis in front of snowy background"
+            />
+          </a>
+          <a href="https://www.youtube.com/watch?v=oSp4ZS4xC5U">
+            <Img
+              fluid={data.a10.childImageSharp.fluid}
+              alt="soundboard dials"
+            />
+          </a>
+          <a href="https://www.youtube.com/watch?v=Bumzlb7RBBs">
+            <Img
+              fluid={data.a11.childImageSharp.fluid}
+              alt="hands playing piano"
+            />
+          </a>
+          <a href="https://www.youtube.com/watch?v=LTCOgAG-jCo">
+            <Img fluid={data.a12.childImageSharp.fluid} alt="woman beckoning" />
+          </a>
+          <a href="https://www.youtube.com/watch?v=_VhwUxTu0qE">
+            <Img
+              fluid={data.a13.childImageSharp.fluid}
+              alt="Hands reaching up"
+            />
+          </a>
+          <a href="https://www.youtube.com/watch?v=Fcy87hQAShg">
+            <Img
+              fluid={data.a13b.childImageSharp.fluid}
+              alt="Sasha Travis looking tribal"
+            />
+          </a>
+          <Img
+            fluid={data.a14.childImageSharp.fluid}
+            alt="woman dancing on beach"
+          />
+        </Carousel>
       </div>
+
+      <div>
+        <Instagram />
+      </div>
+
       <div className="container">
         <h3>Vampire: The Masquerade</h3>
         <div className="row">
@@ -122,33 +139,6 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
 
-      <h2>
-        <a id="music"></a>Music Videos
-      </h2>
-
-      <div className="container">
-        <div className="video-container">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/_VhwUxTu0qE"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-
-        <div className="video-container">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/Fcy87hQAShg"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
       <div id="contactContainer" className="container">
         <div className="row">
           <h3>Contact Me</h3>
@@ -261,6 +251,111 @@ export const query = graphql`
     ravnos3: file(relativePath: { eq: "Ravnos3.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a1: file(relativePath: { eq: "a1.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a2: file(relativePath: { eq: "a2.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a3: file(relativePath: { eq: "a3.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a4: file(relativePath: { eq: "a4.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a5: file(relativePath: { eq: "a5.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a6: file(relativePath: { eq: "a6.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a7: file(relativePath: { eq: "a7.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a8: file(relativePath: { eq: "a8.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a9: file(relativePath: { eq: "a9.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a10: file(relativePath: { eq: "a10.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a11: file(relativePath: { eq: "a11.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a12: file(relativePath: { eq: "a12.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a13: file(relativePath: { eq: "a13.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a13b: file(relativePath: { eq: "a13b.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    a14: file(relativePath: { eq: "a14.png" }) {
+      childImageSharp {
+        fluid {
           ...GatsbyImageSharpFluid
         }
       }
