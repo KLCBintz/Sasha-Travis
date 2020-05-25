@@ -27,12 +27,12 @@ const IndexPage = ({ data }) => {
         </section>
       </div>
 
-      <div>
+      <div id="video-container">
         <h2>
           <a id="music"></a>Music Videos
         </h2>
 
-        <Carousel className="videos">
+        <Carousel id="videos">
           <a href="https://www.youtube.com/watch?v=UEBKhz5j6Lw">
             <Img fluid={data.a1.childImageSharp.fluid} alt="band playing" />
           </a>
