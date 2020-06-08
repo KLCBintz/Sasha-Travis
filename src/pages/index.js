@@ -34,7 +34,7 @@ const IndexPage = ({ data }) => {
 
         <Carousel id="videos">
           <a href="https://www.youtube.com/watch?v=UEBKhz5j6Lw">
-            <Img fluid={data.a1.childImageSharp.fluid} alt="band playing" />
+            <Img fluid={data.a1.childImageSharp.fluid} alt="sasha singing" />
           </a>
           <a href="https://www.youtube.com/watch?v=RGbDjdoWVoI">
             <Img
@@ -108,10 +108,14 @@ const IndexPage = ({ data }) => {
               alt="Sasha Travis looking tribal"
             />
           </a>
-          <Img
-            fluid={data.a14.childImageSharp.fluid}
-            alt="woman dancing on beach"
-          />
+          <a href="https://www.youtube.com/watch?v=wOZHTwNPuns">
+            <Img
+              fluid={data.a14.childImageSharp.fluid}
+              alt="woman dancing on beach"
+            />
+          </a>
+
+          <Img fluid={data.a1.childImageSharp.fluid} alt="sasha singing" />
         </Carousel>
       </div>
 
@@ -225,15 +229,6 @@ export const cardImage = graphql`
 
 export const query = graphql`
   query {
-    blog1: file(relativePath: { eq: "blog1.jpg" }) {
-      ...cardImage
-    }
-    blog2: file(relativePath: { eq: "blog2.jpg" }) {
-      ...cardImage
-    }
-    blog3: file(relativePath: { eq: "blog3.jpg" }) {
-      ...cardImage
-    }
     hero: file(relativePath: { eq: "sasha-cover.jpg" }) {
       childImageSharp {
         fluid {

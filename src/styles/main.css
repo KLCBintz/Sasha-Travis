@@ -69,3 +69,14 @@ h1 {
 #contactContainer {
   margin-top: 10em;
 }
+
+.hidden {
+  display: none;
+}
+
+iframe {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 3em auto;
+}
