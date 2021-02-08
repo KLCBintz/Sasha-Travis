@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Sasha Travis`,
-    description: `Actress, Voiceover Artist, Writer`,
+    description: `Female voiceover artist, actor`,
     author: `@sashamtravis`,
   },
   plugins: [
