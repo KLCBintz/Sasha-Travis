@@ -15,6 +15,12 @@ const IndexPage = ({ data }) => {
     transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
     config: { mass: 5, tension: 500, friction: 80 },
   })
+
+  const playAudio = () => {
+    console.log("Playing...")
+    document.getElementsByTagName("audio")[0].play()
+  }
+
   return (
     <Layout>
       <SEO title="Home" />
@@ -30,7 +36,15 @@ const IndexPage = ({ data }) => {
         </section>
       </div>
 
-      <div class="cardImage" onClick={() => set(state => !state)}>
+      <div
+        className="cardImage"
+        onClick={() =>
+          set(state => {
+            if (!flipped) playAudio()
+            return !state
+          })
+        }
+      >
         <a.div
           className="flip"
           style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
@@ -39,16 +53,31 @@ const IndexPage = ({ data }) => {
             fluid={data.cardImage.childImageSharp.fluid}
             alt="sasha looking cheeky"
           />
-          <button class="radio">Play Now</button>
+          <button className="radio">
+            <i class="medium material-icons">play_circle_filled</i> <br /> Play
+            Now
+          </button>
         </a.div>
         <a.div
-          class="flip"
+          className="flip"
           style={{
             opacity,
             transform: transform.interpolate(t => `${t} rotateX(180deg)`),
           }}
         >
           <Img fluid={data.cardImage2.childImageSharp.fluid} alt="microphone" />
+          <figure className="audio-elem">
+            <figcaption>Character Reel</figcaption>
+            <audio
+              controls
+              autoPlay
+              preload="auto"
+              src="/audio/sasha-travis-a2.mp3"
+            >
+              Your browser does not support the
+              <code>audio</code> element.
+            </audio>
+          </figure>
         </a.div>
       </div>
 
