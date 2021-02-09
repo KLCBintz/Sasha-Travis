@@ -53,27 +53,6 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-/*#video-container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-#videos {
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(0, -50%);
-}
-
-.vampire {
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: 5vh;
-  width: 100%;
-  height: auto;
-}
-*/
-
 .cardImage {
   position: relative;
   padding: 0;
