@@ -17,8 +17,7 @@ const IndexPage = ({ data }) => {
   })
 
   const playAudio = () => {
-    console.log("Playing...")
-    document.getElementsByTagName("audio")[0].play()
+    document.getElementById("character").play()
   }
 
   return (
@@ -72,6 +71,7 @@ const IndexPage = ({ data }) => {
               controls
               autoPlay
               preload="auto"
+              id="character"
               src="/audio/sasha-travis-a2.mp3"
             >
               Your browser does not support the
@@ -79,6 +79,36 @@ const IndexPage = ({ data }) => {
             </audio>
           </figure>
         </a.div>
+      </div>
+
+      <div id="bio">
+        <p>
+          Howdy! Welcome to my cyberspace green room! I'm sasha, and I'm excited
+          you're here!
+        </p>
+        <p>
+          I am an enthusiastically driven Scorpio who believes in true love,
+          exquisite art and dry shampoo. I drive just a little too fast and
+          consume massive amounts of homemade, cold-brew coffee.
+        </p>
+        <p>
+          I am at my best when I get to be a collaborative storyteller; I love
+          nothing more than the power of a creative collective with a common
+          goal.
+        </p>
+        <p>
+          I'm here to build dreams, to be a part of your creative vision and to
+          help bring your ideas to life! Art is a great connector of people, one
+          of the universal languages of the human race, and I want to be a part
+          of your art and your story.
+        </p>
+        <p>
+          I am a dreamer and a builder, I believe it is completely possible to
+          be both the tether and the kite! I love both the whimsical artistry of
+          the creative process and the satisfaction of a polished and
+          professional product.
+        </p>
+        <p>Thanks for stopping by. Let's build together!</p>
       </div>
 
       <div id="contactContainer" className="container">
