@@ -28,6 +28,8 @@ const FlipCard = props => {
         style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
       >
         <Img fluid={props.baseImage} alt="sasha looking cheeky" />
+        <h3 className="flipCardTitle">{props.audioTitle}</h3>
+
         <button
           className="radio"
           style={{ backgroundColor: props.buttonColor }}

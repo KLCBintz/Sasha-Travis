@@ -39,11 +39,12 @@ const IndexPage = ({ data }) => {
         flippedImage={data.cardImage2.childImageSharp.fluid}
         audioFile={"/audio/sasha-travis-c3.mp3"}
         id="commercial"
-        audioTitle="Commercial Reel"
+        audioTitle="Advertising Reel"
         buttonColor="black"
       />
 
       <div id="bio">
+        <h3>About</h3>
         <p>
           Howdy! Welcome to my cyberspace green room! I'm sasha, and I'm excited
           you're here!

@@ -5,7 +5,7 @@
 body {
   background-color: #141414;
   color: white;
-  font-family: "sans-serif" "oxygen";
+  font-family: "oxygen", sans-serif;
 }
 
 .nav-wrapper {
@@ -25,12 +25,16 @@ footer {
   text-align: center;
 }
 
+h3 {
+  font-family: "abril fatface", serif;
+}
+
 h1 {
   top: 1em;
   text-transform: uppercase;
   font-size: 5em;
   font-weight: 800;
-  font-family: "Abril Fatface";
+  font-family: "Abril Fatface", serif;
 }
 
 h2 {
@@ -101,15 +105,24 @@ h2 {
   will-change: transform, opacity;
 }
 
+.flipCardTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "oxygen", sans-serif !important;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.25em 0.25em 0.25em 0.75em;
+}
+
 #bio {
   background-color: #f7eee0;
   color: #140000;
-  width: 75%;
-  margin-left: 12.5%;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px 60px;
   font-family: oxygen;
   font-size: 16px;
-  box-shadow: 5px 10px;
 }
 
 #contactContainer {
@@ -135,10 +148,6 @@ iframe {
   font-size: 20px;
 }
 
-h3 {
-  font-family: "abril fatface";
-}
-
 #submit {
   background-color: white;
   color: black;
@@ -158,5 +167,10 @@ h3 {
   }
   .audio-elem {
     transform: translate(-65%);
+  }
+  #bio {
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 20px;
   }
 }
