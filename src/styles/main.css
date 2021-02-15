@@ -27,6 +27,8 @@ h1 {
   font-size: 6em;
   font-weight: 800;
   font-family: "Great Vibes", serif;
+  animation: fade-in-right;
+  animation-duration: 1s;
 }
 
 h2 {
@@ -140,6 +142,8 @@ h3 {
   padding: 20px 60px;
   font-family: oxygen;
   font-size: 16px;
+  animation-name: slidein;
+  animation-duration: 1s;
 }
 
 #contactContainer {
@@ -196,5 +200,35 @@ iframe {
   }
   .menu {
     flex-direction: column;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 0%;
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes grow-left {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
   }
 }
