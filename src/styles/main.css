@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oxygen:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oxygen:wght@300;400;700&family=Vidaloka&display=swap");
 body {
   background-color: #141414;
   color: white;
@@ -25,20 +22,22 @@ footer {
   text-align: center;
 }
 
-h3 {
-  font-family: "abril fatface", serif;
-}
-
 h1 {
   top: 1em;
-  text-transform: uppercase;
-  font-size: 5em;
+  font-size: 6em;
   font-weight: 800;
-  font-family: "Abril Fatface", serif;
+  font-family: "Great Vibes", serif;
 }
 
 h2 {
-  font-family: "oxygen";
+  font-family: "Oxygen";
+  font-size: 3em;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: "Oxygen", serif;
+  font-weight: 700;
 }
 
 #hero {
@@ -59,6 +58,24 @@ h2 {
   opacity: 0.4;
 }
 
+.menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 4em;
+}
+
+.menu > a {
+  margin: 0.5em;
+  font-size: 20px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 2px 7px;
+}
+
+.menu > a:hover {
+  border: 1px solid white;
+}
+
 .audio-elem {
   position: absolute;
   top: 50%;
@@ -69,7 +86,7 @@ h2 {
 .cardImage {
   position: relative;
   padding: 0;
-  margin: 5em auto;
+  margin: 6em auto;
   width: 80%;
   height: 600px;
   max-width: 800px;
@@ -157,9 +174,13 @@ iframe {
   .cardImage {
     height: 171px;
   }
+  .flipCardTitle {
+    font-size: 20px;
+    padding: 0.15em 0.15em 0.15em 0.3em;
+  }
   .cardImage .radio {
     top: 75%;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px 20px;
   }
   audio {
@@ -172,5 +193,8 @@ iframe {
     align-items: center;
     margin: 0 auto;
     padding: 20px 20px;
+  }
+  .menu {
+    flex-direction: column;
   }
 }

@@ -22,6 +22,12 @@ const IndexPage = ({ data }) => {
         <section className="hero-text">
           <h1>Sasha Travis</h1>
           <h2>Voiceover Artist</h2>
+          <div class="menu">
+            <a href="#characterContainer">Characters</a>
+            <a href="#commercialContainer">Advertisements</a>
+            <a href="#bio">About</a>
+            <a href="#contactContainer">Contact</a>
+          </div>
         </section>
       </div>
 
@@ -183,7 +189,7 @@ export const query = graphql`
         }
       }
     }
-    cardImage3: file(relativePath: { eq: "rockSinger.jpg" }) {
+    cardImage3: file(relativePath: { eq: "professional.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
