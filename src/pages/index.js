@@ -74,8 +74,19 @@ const IndexPage = ({ data }) => {
       </div>
 
       <div id="contactContainer" className="container">
+        <h3>Contact Me</h3>
+        <div id="contactInfo">
+          <p>
+            Email:
+            <br />
+            sasha@sashatravis.com
+          </p>
+          <p>
+            Phone:
+            <br /> 123-456-789
+          </p>
+        </div>
         <div className="row">
-          <h3>Contact Me</h3>
           <form
             name="contact"
             method="POST"
@@ -132,6 +143,7 @@ const IndexPage = ({ data }) => {
               </div>
             </div>
             <button
+              id="submit"
               className="btn waves-effect waves-light"
               type="submit"
               name="action"
