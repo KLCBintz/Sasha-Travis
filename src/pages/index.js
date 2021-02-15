@@ -1,24 +1,14 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
-import { useSpring, animated as a } from "react-spring"
 
 import Layout from "../components/layout"
 
 import SEO from "../components/seo"
+import FlipCard from "../components/flipcard"
 
 const IndexPage = ({ data }) => {
   console.log(data)
-  const [flipped, set] = useState(false)
-  const { transform, opacity } = useSpring({
-    opacity: flipped ? 1 : 0,
-    transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
-    config: { mass: 5, tension: 500, friction: 80 },
-  })
-
-  const playAudio = () => {
-    document.getElementById("character").play()
-  }
 
   return (
     <Layout>
@@ -35,51 +25,23 @@ const IndexPage = ({ data }) => {
         </section>
       </div>
 
-      <div
-        className="cardImage"
-        onClick={() =>
-          set(state => {
-            if (!flipped) playAudio()
-            return !state
-          })
-        }
-      >
-        <a.div
-          className="flip"
-          style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
-        >
-          <Img
-            fluid={data.cardImage.childImageSharp.fluid}
-            alt="sasha looking cheeky"
-          />
-          <button className="radio">
-            <i class="medium material-icons">play_circle_filled</i> <br /> Play
-            Now
-          </button>
-        </a.div>
-        <a.div
-          className="flip"
-          style={{
-            opacity,
-            transform: transform.interpolate(t => `${t} rotateX(180deg)`),
-          }}
-        >
-          <Img fluid={data.cardImage2.childImageSharp.fluid} alt="microphone" />
-          <figure className="audio-elem">
-            <figcaption>Character Reel</figcaption>
-            <audio
-              controls
-              autoPlay
-              preload="auto"
-              id="character"
-              src="/audio/sasha-travis-a2.mp3"
-            >
-              Your browser does not support the
-              <code>audio</code> element.
-            </audio>
-          </figure>
-        </a.div>
-      </div>
+      <FlipCard
+        baseImage={data.cardImage.childImageSharp.fluid}
+        flippedImage={data.cardImage2.childImageSharp.fluid}
+        audioFile={"/audio/sasha-travis-a2.mp3"}
+        id="character"
+        audioTitle="Character Reel"
+        buttonColor="#a96554"
+      />
+
+      <FlipCard
+        baseImage={data.cardImage3.childImageSharp.fluid}
+        flippedImage={data.cardImage2.childImageSharp.fluid}
+        audioFile={"/audio/sasha-travis-c3.mp3"}
+        id="commercial"
+        audioTitle="Commercial Reel"
+        buttonColor="black"
+      />
 
       <div id="bio">
         <p>
@@ -202,6 +164,13 @@ export const query = graphql`
       }
     }
     cardImage2: file(relativePath: { eq: "microphone.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1000) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    cardImage3: file(relativePath: { eq: "rockSinger.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
