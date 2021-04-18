@@ -90,7 +90,7 @@ const IndexPage = ({ data }) => {
           </p>
           <p>
             Phone:
-            <br /> 123-456-789
+            <br /> 323-947-3396
           </p>
         </div>
         <div className="row">
