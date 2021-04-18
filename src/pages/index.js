@@ -40,6 +40,14 @@ const IndexPage = ({ data }) => {
         buttonColor="#a96554"
       />
 
+      <div class="download">
+        <button class="character">
+          <a class="c" href="../audio/sasha-travis-a2.mp3" download>
+            Download Character Reel
+          </a>
+        </button>
+      </div>
+
       <FlipCard
         baseImage={data.cardImage3.childImageSharp.fluid}
         flippedImage={data.cardImage2.childImageSharp.fluid}
@@ -48,6 +56,14 @@ const IndexPage = ({ data }) => {
         audioTitle="Advertising Reel"
         buttonColor="black"
       />
+
+      <div class="download">
+        <button class="ad">
+          <a class="c" href="../audio/sasha-travis-c3.mp3" download>
+            Download Advertisement Reel
+          </a>
+        </button>
+      </div>
 
       <div id="bio">
         <h3>About</h3>
