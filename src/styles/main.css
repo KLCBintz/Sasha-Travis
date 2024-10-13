@@ -106,7 +106,7 @@ h3 {
   left: 50%;
   transform: translate(-50%);
   -ms-transform: translate(-50%);
-  background-color: #a96554;
+  background-color: black;
   color: white;
   font-size: 30px;
   font-family: "oxygen";
@@ -151,7 +151,7 @@ button {
 }
 
 .character {
-  background-color: #a96554;
+  background-color: black;
 }
 
 .c {

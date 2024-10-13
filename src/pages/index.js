@@ -37,7 +37,7 @@ const IndexPage = ({ data }) => {
         audioFile={"/audio/sasha-travis-a2.mp3"}
         id="character"
         audioTitle="Character Reel"
-        buttonColor="#a96554"
+        buttonColor="black"
       />
 
       <div class="download">
