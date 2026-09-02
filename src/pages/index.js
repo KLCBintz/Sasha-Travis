@@ -68,32 +68,25 @@ const IndexPage = ({ data }) => {
       <div id="bio">
         <h3>About</h3>
         <p>
-          Howdy! Welcome to my cyberspace green room! I'm sasha, and I'm excited
-          you're here!
+          Sasha Travis is a voiceover artist who brings warmth, wit, and range
+          to every script. She is equally at home delivering a polished,
+          trustworthy commercial read or bringing a quick-witted animated
+          character to life. With a background in singing and theatrical
+          performance, she treats every session as a collaborative act of
+          storytelling, chasing exactly the right tone for your vision alongside
+          you.
         </p>
         <p>
-          I am an enthusiastically driven Scorpio who believes in true love,
-          exquisite art and dry shampoo. I drive just a little too fast and
-          consume massive amounts of homemade, cold-brew coffee.
+          Off script, she's a recovering theater kid who still tears up at a good
+          curtain call, happily running on homemade cold brew and a near-religious
+          devotion to dry shampoo, with a lifelong soft spot for true love and
+          petting all the dogs. And art. Art is one of the great connectors of
+          the human race, and she's here to be part of your story.
         </p>
         <p>
-          I am at my best when I get to be a collaborative storyteller; I love
-          nothing more than the power of a creative collective with a common
-          goal.
+          Based in California, available for remote sessions. Let's build
+          something together.
         </p>
-        <p>
-          I'm here to build dreams, to be a part of your creative vision and to
-          help bring your ideas to life! Art is a great connector of people, one
-          of the universal languages of the human race, and I want to be a part
-          of your art and your story.
-        </p>
-        <p>
-          I am a dreamer and a builder, I believe it is completely possible to
-          be both the tether and the kite! I love both the whimsical artistry of
-          the creative process and the satisfaction of a polished and
-          professional product.
-        </p>
-        <p>Thanks for stopping by. Let's build together!</p>
       </div>
 
       <div id="contactContainer" className="container">
