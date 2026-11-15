@@ -37,7 +37,6 @@ const IndexPage = ({ data }) => {
         audioFile={"/audio/sasha-travis-a2.mp3"}
         id="character"
         audioTitle="Character Reel"
-        buttonColor="black"
       />
 
       <div class="download">
@@ -54,7 +53,6 @@ const IndexPage = ({ data }) => {
         audioFile={"/audio/sasha-travis-c3.mp3"}
         id="commercial"
         audioTitle="Advertising Reel"
-        buttonColor="black"
       />
 
       <div class="download">

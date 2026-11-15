@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import { useSpring, animated as a } from "react-spring"
 import Img from "gatsby-image"
+import ReelPlayButton from "./reel-play-button"
 
 const FlipCard = props => {
   const [flipped, set] = useState(false)
@@ -47,13 +48,7 @@ const FlipCard = props => {
         )}
         <h3 className="flipCardTitle">{props.audioTitle}</h3>
 
-        <button
-          className="radio"
-          style={{ backgroundColor: props.buttonColor }}
-        >
-          <i class="medium material-icons">play_circle_filled</i> <br /> Play
-          Now
-        </button>
+        <ReelPlayButton reelTitle={props.audioTitle} />
       </a.div>
       <a.div
         className="flip"
