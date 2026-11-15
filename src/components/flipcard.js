@@ -28,7 +28,18 @@ const FlipCard = props => {
         className="flip"
         style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
       >
-        <Img fluid={props.baseImage} alt="sasha looking cheeky" />
+        {props.id === "character" ? (
+          <div className="characterImageCrop">
+            <Img
+              fluid={props.baseImage}
+              alt="sasha looking cheeky"
+              style={{ height: "100%" }}
+              imgStyle={{ objectFit: "cover", objectPosition: "center 25%" }}
+            />
+          </div>
+        ) : (
+          <Img fluid={props.baseImage} alt="sasha looking cheeky" />
+        )}
         <h3 className="flipCardTitle">{props.audioTitle}</h3>
 
         <button

@@ -125,6 +125,12 @@ h3 {
   will-change: transform, opacity;
 }
 
+.characterImageCrop {
+  width: 100%;
+  aspect-ratio: 4240 / 2384;
+  overflow: hidden;
+}
+
 .flipCardTitle {
   position: absolute;
   top: 0;
