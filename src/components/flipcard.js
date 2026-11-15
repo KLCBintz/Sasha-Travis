@@ -34,7 +34,12 @@ const FlipCard = props => {
               fluid={props.baseImage}
               alt="sasha looking cheeky"
               style={{ height: "100%" }}
-              imgStyle={{ objectFit: "cover", objectPosition: "center 25%" }}
+              imgStyle={{
+                left: "5%",
+                width: "90%",
+                objectFit: "cover",
+                objectPosition: "center 27%",
+              }}
             />
           </div>
         ) : (
