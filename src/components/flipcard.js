@@ -45,9 +45,11 @@ const FlipCard = props => {
                 : undefined
             }
           />
-          <ReelPlayButton reelTitle={props.audioTitle} />
         </div>
         <h3 className="flipCardTitle">{props.audioTitle}</h3>
+        <div className="reelActions">
+          <ReelPlayButton reelTitle={props.audioTitle} />
+        </div>
       </a.div>
       <a.div
         className="flip"

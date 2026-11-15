@@ -91,7 +91,7 @@ h3 {
   margin: 5em auto;
   margin-bottom: 0;
   width: 80%;
-  height: 600px;
+  height: calc(min(45vw, 450px) + 90px);
   max-width: 800px;
   cursor: pointer;
 }
@@ -100,18 +100,16 @@ h3 {
   transform: scale(1.03);
 }
 
-.reelPhoto .radio {
-  position: absolute;
-  z-index: 1;
+.reelActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.reelActions .radio {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  top: auto;
-  bottom: 16px;
-  left: auto;
-  right: 16px;
-  transform: none;
-  -ms-transform: none;
   margin: 0;
   background-color: black;
   color: white;
@@ -126,7 +124,7 @@ h3 {
   line-height: 100%;
 }
 
-.reelPhoto .radio .material-icons {
+.reelActions .radio .material-icons {
   font-size: 32px;
   line-height: 1;
 }
@@ -227,7 +225,7 @@ iframe {
 /*small screen size*/
 @media only screen and (max-width: 600px) {
   .cardImage {
-    height: 45vw;
+    height: calc(45vw + 56px);
     margin-bottom: 3em;
     margin-top: 2em;
   }
@@ -235,14 +233,15 @@ iframe {
     font-size: 20px;
     padding: 0.15em 0.15em 0.15em 0.3em;
   }
-  .reelPhoto .radio {
-    bottom: 8px;
-    right: 8px;
+  .reelActions {
+    margin-top: 8px;
+  }
+  .reelActions .radio {
     gap: 4px;
     font-size: 12px;
     padding: 6px 8px;
   }
-  .reelPhoto .radio .material-icons {
+  .reelActions .radio .material-icons {
     font-size: 20px;
   }
   audio {
