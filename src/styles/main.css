@@ -100,8 +100,9 @@ h3 {
   transform: scale(1.03);
 }
 
-.cardImage .radio {
+.reelPhoto .radio {
   position: absolute;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -125,7 +126,7 @@ h3 {
   line-height: 100%;
 }
 
-.cardImage .radio .material-icons {
+.reelPhoto .radio .material-icons {
   font-size: 32px;
   line-height: 1;
 }
@@ -234,14 +235,14 @@ iframe {
     font-size: 20px;
     padding: 0.15em 0.15em 0.15em 0.3em;
   }
-  .cardImage .radio {
+  .reelPhoto .radio {
     bottom: 8px;
     right: 8px;
     gap: 4px;
     font-size: 12px;
     padding: 6px 8px;
   }
-  .cardImage .radio .material-icons {
+  .reelPhoto .radio .material-icons {
     font-size: 20px;
   }
   audio {
