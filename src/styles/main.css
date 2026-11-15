@@ -132,10 +132,6 @@ h3 {
   background-color: #211715;
 }
 
-#characterContainer {
-  height: min(600px, calc(45vw + 150px));
-}
-
 #characterContainer .radio {
   display: inline-flex;
   align-items: center;
